@@ -1,0 +1,25 @@
+<%- include("header.ejs")%>  
+  <%- include("nav.ejs")%>
+  <h1>BOOKS</h1>
+  <div class="details">
+  
+    <h3>BOOK_NAME:<%=book.name%></h3>
+    <h3>AUTHOR:<%=book.author%> </h3>
+    <h3>PAGES:<%=book.pages%> </h3>
+    <h3>DESCRIPTION:<%=book.description%> </h3>
+    <h3> PUBLICATION:<%=book.publication%> </h3>
+    <h3>YEAR:<%=book.year%> </h3>
+    
+    <!-- <hr> -->
+    <a href="/delete/<%=index%>">DELETE</a>
+    &nbsp;
+    &nbsp;
+    <a href="/update/<%=index%>">UPDATE</a>
+
+
+
+  </div>
+
+
+
+<%- include("footer.ejs")%>

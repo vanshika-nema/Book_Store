@@ -1,0 +1,20 @@
+<%- include("header.ejs")%> 
+<%- include("nav.ejs")%> 
+    <h1>LIST OF BOOKS</h1>
+
+    
+  <div class="show">
+    <%Books.forEach(function(book,index){%> <br><br>
+      BOOK_NAME:<%=book.name%> <br><br>
+      AUTHOR:<%=book.author%> <br><br> 
+      <!-- PAGES:<%=book.pages%> <br><br>  -->
+      DESCRIPTION:<%=book.description%> <br><br> 
+      <!-- PUBLICATION:<%= book.publication%> <br><br>  -->
+      <!-- YEAR:<%= book.year%> <br><br>  -->
+      <!-- IMAGE:<%= book.image%> <br><br>  -->
+      <a href="/details/<%=index%>">EXPLORE MORE</a>
+      <!-- <hr> -->
+    <%})%>
+  </div>
+  
+  <%- include("footer.ejs")%>

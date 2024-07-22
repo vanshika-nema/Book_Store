@@ -1,0 +1,21 @@
+<%- include("header.ejs")%>  
+
+
+<!-- <%- include("nav.ejs")%> -->
+<h1>UPDATE FORM</h1>
+<div class="form">
+
+  <form action="/update/<%= index%>" method="POST">
+  <input disabled value="<%= books.id%>" type="number" placeholder="Id" name="id" > <br> <br>
+  <input value="<%= books.name%>" type="text" placeholder="Name" name="name" > <br> <br>
+  <input value="<%= books.author%>" type="text" placeholder="Author" name="author"> <br> <br>
+  <input value="<%= books.pages%>" type="number" placeholder="Pages" name="pages" > <br> <br>
+  <input value="<%= books.year%>" type="number" placeholder="Year" name="year" > <br> <br>
+  <input value="<%= books.image%>" type="url" placeholder="Image" name="image" > <br> <br>
+  <input value="<%= books.publication%>" type="text" placeholder="Publication" name="publication" > <br> <br>
+  <input value="<%= books.description%>" type="text" placeholder="Description" name="description" > <br> <br>
+  <button>submit</button>
+  </form>
+</div>
+
+<%- include("footer.ejs")%>

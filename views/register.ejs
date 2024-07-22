@@ -1,0 +1,23 @@
+<%- include("header.ejs")%>  
+
+
+<%- include("nav.ejs")%>
+<h1>REGISTERATION FORM</h1>
+<div class="form">
+
+  <form action="/register" method="POST">
+    <!-- <input type="number" placeholder="Id" name="id" > <br> <br> -->
+  <input type="text" placeholder="Name" name="name" > <br> <br>
+  <input type="text" placeholder="Author" name="author"> <br> <br>
+  <input type="number" placeholder="Pages" name="pages" > <br> <br>
+  <input type="number" placeholder="Year" name="year" > <br> <br>
+  <input type="url" placeholder="Image" name="image" > <br> <br>
+  <input type="text" placeholder="Publication" name="publication" > <br> <br>
+  <input type="text" placeholder="Description" name="description" > <br> <br>
+  <button>Submit</button>
+  </form>
+</div>
+
+
+
+<%- include("footer.ejs")%>
